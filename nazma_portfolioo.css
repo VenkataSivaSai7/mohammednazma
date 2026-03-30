@@ -1,0 +1,849 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    /* color: white; */
+}
+
+/* img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+} */
+
+html, body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    width: 100%;
+}
+
+body {
+    padding-top: 100px; /*padding top for each page*/
+    background: linear-gradient(90deg, #020617, #1e293b);
+    color: white;
+    min-height: 100vh;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+    border-bottom:2px solid #020617;
+    margin-right: auto;
+}
+
+.logo {
+    /* margin-bottom: 35px; */
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(90deg,#3b82f6,#06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    font-size: 14px;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: #cbd5f5;
+    white-space: nowrap;
+    letter-spacing: 1px;
+}
+
+.navbar ul a:hover {
+    background: linear-gradient(90deg,#3b82f6,#06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* transition: 1s; */
+}
+
+
+/* HOME */
+.home {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;/*justofying all the content in .home*/
+    /* gap: 80px;
+    padding: 40px; */
+}
+.home-container {
+   display: flex;
+   align-items: center;
+   gap: 80px;
+   padding: 40px;
+   margin-bottom: 100px;
+   /* padding-bottom: 120px; */
+   /* padding-left: 180px; */
+   /* line-height: 1.6; */
+}
+.home-img img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border: 4px solid #06b6d4;
+    border-radius: 50%;
+}
+.home-text h3{
+    color: #3b82f6;
+    margin-top: 10px;
+}
+.home-text h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg,#3b82f6,#06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.home-text h4 {
+    color: #cbd5f5;
+    margin-bottom: 15px;
+}
+.home-text p {
+    color: #94a3b8;
+    line-height: 1.6;
+    max-width: 520px;
+    /* margin-bottom: 15px; */
+}
+.social-icons a {
+    display: inline;
+    gap: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 20%; 
+    font-size: 22px;
+    color: #cbd5f5;
+    margin-top: 50px;
+    line-height: 3.6;
+    transition: 0.4s;
+}
+.social-icons a:hover {
+    color: #06b6d4;
+    transform: scale(2.1);
+}
+
+/*EDUCATION*/
+#access_education {
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.EDUCATION {
+    /* height: auto; */
+    padding: 80px 10%;
+    text-align:center;
+    /* margin-bottom: auto; */
+}
+.education-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.education-title:hover {
+    color: #06b6d4;
+    transition: 0.6s;
+    transform: scale(1.1);
+}
+.desc {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 50px;
+}
+.education-container {
+    display: grid; /*every container will be aligned vertically*/
+    gap: 10px;
+    grid-template-columns: repeat(1,1fr); /*coloumn wise count of cards*/
+}
+.education-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1e293b;
+    padding: 15px 25px;
+    line-height: 1.1;
+    gap: 15px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+.education-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 6px #3b82f6;
+    transition: 0.6s;
+}
+.left {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+.education-logo {
+    display: left;
+    border-radius: 15px;
+    object-fit: cover;
+    height: 25%;
+    width: 25%;
+    margin-bottom: 20px;
+    margin-right: 70px;
+}
+/* SKILLS SECTION */
+#access_skills {
+    height: 100vh;              /* full screen */
+    display: flex;
+    align-items: center;        /* vertical center */
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.skills {
+    padding: 80px 20%;
+    text-align: center;
+    /* margin-bottom: 200px; */
+}
+/* .skills { */
+    /* font-size: 36px;
+    margin-bottom: 50px;
+    color: white;
+} */
+.skill-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.skills-title {
+    font-size: 22px;
+    position: relative;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.skills-title:hover {
+    color: #06b6d4;
+    transition: 0.6s;
+    transform: scale(1.1);
+}
+.skill-card {
+    white-space: nowrap;
+    display: grid;
+    align-items: center;
+    background-color: #1e293b;
+    padding: 50px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    /* justify-content: space-between; */
+}
+.skill-card:hover {
+    transform: translate(-6px);
+    box-shadow: 0 0 6px #3b82f6;
+    transition: 0.6s;
+}
+.skill-card h3 {
+    color: #3b82f6;
+    margin-bottom:15px;
+    white-space: nowrap;
+    font-size: 20px;
+}
+.skill-items {
+    color: #aaa;
+    font-size: 14px;
+    font-weight: 450;
+    text-shadow: #aaa;
+    text-align: center;
+    justify-content: space-between;
+    line-height: 1.5;
+}
+.skill-items1 {
+    color: #aaa;
+    font-size: 14px;
+    font-weight: 450;
+    text-shadow: #aaa;
+    text-align: center;
+    justify-content: space-between;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+.descskills {
+    margin-top: 70px;
+    color: #aaa;
+    line-height: 1.3;
+    font-size: 14px;
+}
+/* PROJECTS SECTION */
+#access_projects {
+    height: 120vh;
+    align-items: center;
+    justify-self: center;
+    display: flex;
+}
+.projects {
+    padding: 80px 20%;
+    text-align: center;
+}
+.projects h2 {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+.projects h2:hover {
+    color: #06b6d4;
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+.projects-container {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(1,1fr);
+}
+.project-cardimage {
+    padding: 80px;
+}
+.project-card {
+    background: #1e293b;
+    padding-top: 0px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.project-card h3 {
+    margin-bottom: 40px;
+}
+.project-cardimage {
+    padding: 0px;
+    width: 100%;
+    height: 180px;              /* fixed height */
+    overflow: hidden;           /* hides overflow */
+    border-radius: 2px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f172a;  /* optional dark bg */
+}
+.project-cardimage img {
+    margin-top: 30px;  
+    margin-bottom: 40px; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+/* ACHIEVEMENTS SECTION */
+#access_achievements {
+    height: 100vh;
+    /* margin-top: 180px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.achievements {
+    text-align: center;
+    padding: 80px 20%;
+}
+.achievements h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.achievements h2:hover {
+    color: #06b6d4;
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+.achievements-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2,2fr);
+}
+.achievement-card {
+    background-color: #1e293b;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 3%;
+    padding: 30px;
+}
+.achievement-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 6px #3b82f6;
+    transition: 0.6s;
+}
+.achievement-card h3 {
+    background: linear-gradient(90deg,#3b82f6,#06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+    text-shadow:#06b6d4;
+    text-align: left;
+}
+.highlight1 {
+  white-space: nowrap; 
+  font-weight: 700; 
+  color: black;
+  background-color: #fff3cd; /* light yellow */
+  padding: 4px 8px;
+  border-radius: 6px;
+  
+}
+.highlight2 {
+  white-space: nowrap; 
+  font-weight: 700; 
+  color: black;
+  background-color: #d1ecf1; /* light blue */
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.highlight3 {
+  white-space: nowrap;  
+  font-weight: 700;
+  color: black;
+  background-color: #d4edda; /* light green */
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+.highlight4 {
+  white-space: nowrap;  
+  font-weight: 700;
+  color: black;
+  background-color: #f8d7da; /* light red */
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+.achievement-card p {
+    color: #94a3b8;
+    margin-top: 15px;
+    line-height: 1.3;
+}
+/* CONTACT ME */
+#access_contact {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+.contact {
+    text-align: center;
+    padding: 80px 20%;
+}
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+.contact h2:hover {
+    color: #06b6d4;
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+.contactcontainer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1,1fr);
+    margin-bottom: 25px;
+}
+.contact-card {
+    line-height: 1.6;
+    color: #3b82f6;
+    background-color: #1e293b;
+    padding-left: 250px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 250px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 3%;
+}
+.contact-card a:hover {
+    color: #d1ecf1;
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+.view-resume {
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    background: linear-gradient(90deg,#3b82f6,#06b6d4);
+    /* margin-top: 50px; */
+    padding: 12px 28px;
+    border-radius: 25px;
+    /* padding-left: 0px; */
+}
+.view-resume:hover {
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+/* Footer Section */
+.footer {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid #020617;
+    margin-bottom: 30px;
+    padding: 20px;
+    position: relative;
+}
+.footer-content {
+    font-weight: 300;
+    color: #ddd;
+    line-height: 1.8;
+}
+.footer-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+     background: linear-gradient(90deg,#3b82f6,#06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.footer-link {
+    color: #aaa;
+    padding: 15px;
+}
+.footer-link:hover {
+    color: #06b6d4;
+}
+.finishing-touch {
+    font-weight: 450;
+    margin-top: 20px;
+}
+/* scrolling effect */
+.navbar ul a.active {
+    background: linear-gradient(90deg,#3b82f6,#06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* border-bottom: 2px solid #06b6d4; */
+}
+/*MEDIA QUERIES*/
+/* ============================================================
+   MEDIA QUERIES — RESPONSIVE DESIGN
+   Breakpoints:
+   - ≤1024px : Tablets / small laptops
+   - ≤768px  : Large phones / portrait tablets
+   - ≤480px  : Small phones
+   ============================================================ */
+/* ----------------------------------------------------------
+   TABLET (≤1024px)
+   Slightly tighten paddings, shrink the profile image,
+   and let the skills cards stack when there's less room.
+   ---------------------------------------------------------- */
+@media (max-width: 1024px) {
+
+  /* Reduce heavy horizontal padding on content sections */
+  .skills,
+  .projects,
+  .achievements,
+  .contact {
+    padding: 60px 8%;
+  }
+
+  /* Profile image — slightly smaller on tablets */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 5%;
+    gap: 10px;
+  }
+  .navbar ul {
+    display: flex;
+    /* flex-wrap: wrap;        links wrap instead of overflowing */
+    gap: 20px;
+    font-size: 20px;
+  }
+ 
+  .home-img img {
+    height: 240px;
+    width: 240px;
+  }
+
+  /* Headline font slightly smaller */
+  .home-text h1 {
+    font-size: 38px;
+  }
+
+  .education-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .education-logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .left {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+  #access_education {
+    height: auto;         /* let it grow with content */
+    padding: 40px 0;
+  }
+  .EDUCATION {
+    padding: 40px 5%;
+  }
+
+  /* Skills cards: 2 columns instead of 3 */
+  .skill-container {
+    flex-wrap: wrap;
+  }
+  .skill-card {
+    flex: 1 1 calc(50% - 20px); /* two per row */
+    padding: 35px 25px;
+  }
+
+  /* Contact card: reduce the big left/right padding */
+  .contact-card {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  /* Achievements: keep 2-column grid, just smaller gap */
+  .achievements-container {
+    gap: 15px;
+  }
+}
+/* ----------------------------------------------------------
+   LARGE PHONES / PORTRAIT TABLET (≤768px)
+   Stack everything vertically, open up the navbar into
+   a wrapping layout, and scale text down.
+   ---------------------------------------------------------- */
+@media (max-width: 768px) {
+
+  /* ---- NAVBAR ---- */
+  /* Stack logo above the nav links */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 5%;
+    gap: 10px;
+  }
+  .navbar ul {
+    flex-wrap: wrap;        /* links wrap instead of overflowing */
+    gap: 12px;
+    font-size: 12px;
+  }
+
+  /* More body top padding because the navbar is now taller */
+  body {
+    padding-top: 130px;
+  }
+
+  /* ---- HOME ---- */
+  /* Stack photo above text */
+  .home {
+    height: 75vh;
+  }
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  .home-img img {
+    height: 200px;
+    width: 200px;
+  }
+  .home-text h1 {
+    font-size: 28px;
+  }
+  .home-text p {
+    max-width: 100%;  /* paragraph stretches full width when stacked */
+  }
+  .social-icons a {
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 20px;
+    line-height: 2.5;
+  }
+
+  /* ---- EDUCATION ---- */
+  /* Stack logo + text vertically inside each card */
+
+  .education-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .education-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .left {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+  #access_education {
+    height: auto;         /* let it grow with content */
+    padding: 40px 0;
+  }
+  .EDUCATION {
+    padding: 40px 5%;
+  }
+
+  /* ---- SKILLS ---- */
+  /* All skill cards in one column */
+  .skill-container {
+    flex-direction: column;
+  }
+  .skill-card {
+    flex: 1 1 100%;
+    padding: 30px 20px;
+    white-space: normal; /* allow text to wrap on small screens */
+  }
+  #access_skills {
+    height: auto;
+    padding: 40px 0;
+  }
+  .skills {
+    padding: 40px 5%;
+  }
+  .descskills {
+    margin-top: 30px;
+  }
+
+  /* ---- PROJECTS ---- */
+  #access_projects { 
+    height: 150vh;
+    padding: 40px 0;
+  }
+  .projects {
+    /* margin-top: 50px; */
+    padding: 40px 5%;
+  }
+  .projects h2 {
+    margin-top: 20px;
+  }
+
+  /* ---- ACHIEVEMENTS ---- */
+  /* Switch to single column so cards aren't squeezed */
+  .achievements-container {
+    grid-template-columns: 1fr;
+  }
+  #access_achievements {
+    height: auto;
+    padding: 40px 0;
+  }
+  .achievements {
+    padding: 40px 5%;
+  }
+
+  /* ---- CONTACT ---- */
+  /* Remove the enormous fixed padding on contact cards */
+  .contact-card {
+    padding: 20px 5%;
+  }
+  #access_contact {
+    height: auto;
+    margin-bottom: 80px;
+    padding: 40px 0;
+  }
+  .contact {
+    padding: 40px 5%;
+  }
+  .contact h2 {
+    margin-bottom: 30px;
+  }
+
+  /* ---- FOOTER ---- */
+  .footer-content h3 {
+    font-size: 22px;
+  }
+}
+
+
+/* 
+   SMALL PHONES (≤480px)
+   Fine-tune sizes for the smallest screens.
+    */
+@media (max-width: 480px) {
+
+  /* ---- NAVBAR ---- */
+  .logo {
+    font-size: 15px;      /* prevent long name from overflowing */
+  }
+  .navbar ul {
+    gap: 8px;
+    font-size: 11px;
+  }
+  body {
+    padding-top: 150px;   /* navbar wraps further on very small screens */
+  }
+
+  /* ---- HOME ---- */
+  .home {
+    height: 80vh;
+  }
+  .home-img img {
+    height: 160px;
+    width: 160px;
+  }
+  .home-text h1 {
+    font-size: 22px;
+  }
+  .home-text h4 {
+    font-size: 14px;
+  }
+
+  /* ---- HIGHLIGHTS (badge labels) ---- */
+  /* Allow badge text to wrap so it doesn't overflow the card */
+  .highlight1,
+  .highlight2,
+  .highlight3,
+  .highlight4 {
+    white-space: normal;
+    display: inline-block;
+  }
+
+  /* EDUCATION LOGOS */
+
+  #access_education {
+    height: auto;
+  }
+
+  .education-logo {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+  }
+  /* ---- SECTION TITLES ---- */
+  .education-title h2,
+  .skills-title h2,
+  .projects h2,
+  .achievements h2,
+  .contact h2 {
+    font-size: 20px;
+  }
+
+  /* ---- SKILL CARDS ---- */
+  .skill-card {
+    padding: 20px 15px;
+  }
+  .skill-card h3 {
+    font-size: 16px;
+  }
+
+  /* ---- CONTACT CARD ---- */
+  #access_contact { 
+    height: 55vh;
+  }
+  .contact-card {
+    padding: 18px;
+    font-size: 14px;
+  }
+
+  /* ---- FOOTER ---- */
+  .footer-content h3 {
+    font-size: 18px;
+  }
+  .finishing-touch {
+    font-size: 13px;
+  }
+}
